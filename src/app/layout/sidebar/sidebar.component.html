@@ -1,0 +1,20 @@
+<div class="body-home">
+  <div *ngIf="menu" class="sidebar">
+    <div class="sidebar-content">
+      <ul class="sidebar-menu">
+        <li [routerLink]="['/home']">
+          <img src="../../../../assets/img/sidebar/user.png" class="bar-icon" />
+          <p>Perfil</p>
+        </li>
+        <li [routerLink]="['/albumes']">
+          <img src="../../../../assets/img/sidebar/album.png" class="bar-icon" />
+          <p>Álbumes</p>
+        </li>
+        <li [routerLink]="['/contacto']">
+          <img src="../../../../assets/img/sidebar/contacto.png" class="bar-icon" />
+          <p>Contacto</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

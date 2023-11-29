@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  <div class="row">
+    <app-header></app-header>
+  </div>
+  <div class="row flex-nowrap">
+    <app-sidebar class="col-1"></app-sidebar>
+    <main class="col-10 mx-5">
+      <div class="profile container-p">
+        <strong>Contacto</strong>
+        <form [formGroup]="perfilForm" class="mt-4">
+          <div class="row">
+            <div class="col-6">
+              <label for="Nombre">Asunto</label>
+              <input class="inputP" type="text" id="Nombre" name="Nombre" formControlName="nombre" placeholder="Asunto" />
+            </div>
+            <div class="col-6">
+              <label for="username">Fecha</label>
+              <input class="inputP" type="date" id="anioFormacion" name="anioFormacion" formControlName="anioFormacion" placeholder="Fecha" />
+            </div>
+            <div class="col-12">
+              <label for="username">Mensaje</label>
+              <textarea class="inputP" id="biografia" name="biografia" formControlName="biografia" placeholder="Mensaje..."></textarea>
+            </div>
+          </div>
+        </form>
+        <div class="text-end">
+          <button class="btnPerfil">Guardar</button>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>

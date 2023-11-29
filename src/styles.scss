@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+.profile {
+    margin-top: 1rem; 
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+  }
+.container-p {
+    background-color: #f2f2f2;
+    padding: 30px;
+  }
+
+  .btnPerfil {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .btnPerfil:hover {
+    background-color: #45a049;
+  }
+  .inputP{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }

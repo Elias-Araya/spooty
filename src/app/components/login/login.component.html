@@ -1,0 +1,38 @@
+<div class="container-fluid d-flex align-items-center justify-content-center">
+  <div class="container contenedor shadow p-1 m-5" style="max-width: 550px; border-radius: 15px">
+    <div class="container px-5 my-5">
+      <div class="logo-container">
+        <img src="../../../../assets/img/spooty.png" alt="logo sofofa" />
+      </div>
+
+      <div class="container ps-3 pe-0 mt-4 mb-5" style="border-left: 7px solid #133e95; color: #1d2345">
+        <h4 class="m-0 fw-bold">Usuario Persona</h4>
+        <p class="m-0">Complete sus datos para ingresar</p>
+      </div>
+      <form novalidate="" class="" *ngIf="!registro">
+        <input type="text" formcontrolname="rut" placeholder="RUT" class="form-control" style="padding: 15px; border-radius: 0" />
+        <br />
+        <input type="text" formcontrolname="clave" placeholder="Clave" class="form-control" style="padding: 15px; border-radius: 0" />
+        <br /><br />
+        <small>¿Aún no se ha registrado?<a (click)="registro = true" class="text-decoration-none ms-1">Cree una cuenta</a></small>
+        <div class="w-100 gap-3 d-flex align-item-center justify-content-end pt-5">
+          <button type="button" class="btn text-white px-5 fw-bold" style="background: #133e95" routerLink="/home">Ingresar</button>
+        </div>
+      </form>
+      <form novalidate="" class="" *ngIf="registro">
+        <input type="text" formcontrolname="rut" placeholder="RUT" class="form-control" style="padding: 15px; border-radius: 0" />
+        <br />
+        <input type="text" formcontrolname="nombre" placeholder="Nombre" class="form-control" style="padding: 15px; border-radius: 0" />
+        <br />
+        <input type="text" formcontrolname="email" placeholder="Email" class="form-control" style="padding: 15px; border-radius: 0" />
+        <br />
+        <input type="text" formcontrolname="clave" placeholder="Clave" class="form-control" style="padding: 15px; border-radius: 0" />
+        <br />
+        <small>¿Ya tiene una cuenta?<a (click)="registro = false" class="text-decoration-none ms-1">Inicia sesión</a></small>
+        <div class="w-100 gap-3 d-flex align-item-center justify-content-end pt-5">
+          <button type="button" class="btn text-white px-5 fw-bold" style="background: #133e95">Registrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

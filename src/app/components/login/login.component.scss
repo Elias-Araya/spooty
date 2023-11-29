@@ -1,0 +1,25 @@
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btnBlue {
+    background: #1d2345;
+    transition: .1s;
+}
+
+.btnBlue:hover {
+    background: #173c5c;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Si quieres centrarlo verticalmente también */
+}
+/* .container-fluid {
+    background-image: url('../../../assets/img/imgbackFondo.png');
+    background-size: cover; 
+    background-position: center; 
+  } */
