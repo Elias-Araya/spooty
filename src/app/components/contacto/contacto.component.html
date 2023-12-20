@@ -7,24 +7,24 @@
     <main class="col-10 mx-5">
       <div class="profile container-p">
         <strong>Contacto</strong>
-        <form [formGroup]="perfilForm" class="mt-4">
+        <form [formGroup]="contactoForm" class="mt-4">
           <div class="row">
             <div class="col-6">
               <label for="Nombre">Asunto</label>
-              <input class="inputP" type="text" id="Nombre" name="Nombre" formControlName="nombre" placeholder="Asunto" />
+              <input class="inputP" type="text" id="asunto" name="asunto" formControlName="asunto" placeholder="Asunto" />
             </div>
             <div class="col-6">
-              <label for="username">Fecha</label>
-              <input class="inputP" type="date" id="anioFormacion" name="anioFormacion" formControlName="anioFormacion" placeholder="Fecha" />
+              <label for="username">Estado</label>
+              <input class="inputP" type="text" id="estado" name="estado" formControlName="estado" placeholder="Estado" />
             </div>
             <div class="col-12">
               <label for="username">Mensaje</label>
-              <textarea class="inputP" id="biografia" name="biografia" formControlName="biografia" placeholder="Mensaje..."></textarea>
+              <textarea class="inputP" id="mensaje" name="mensaje" formControlName="mensaje" placeholder="Mensaje..."></textarea>
             </div>
           </div>
         </form>
         <div class="text-end">
-          <button class="btnPerfil">Guardar</button>
+          <button class="btnPerfil" (click)="guardarContacto()">Guardar</button>
         </div>
       </div>
     </main>

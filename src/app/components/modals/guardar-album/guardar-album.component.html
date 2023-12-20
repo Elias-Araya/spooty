@@ -1,0 +1,30 @@
+<div class="modal-header bg-transparent">
+  <h5 class="mb-1" id="cardTitle">Usuario</h5>
+  <a (click)="activeModal.close({ estado: false })" class="btn__cerrar___modal">
+    <img src="../../../../assets/img/closex.svg" alt="" />
+  </a>
+</div>
+<div class="modal-body px-sm-5 mx-50 pb-5">
+  <form class="form form-horizontal" novalidate autocomplete="off" [formGroup]="albumForm">
+    <div class="row">
+      <div class="col-12 col-md-12 form-group mb-1">
+        <label for="nombreProceso" class="form-label-home text-encuesta fw-bold mb-2">Titulo</label>
+        <input type="text" class="form-control" placeholder="Ingrese titulo" required formControlName="titulo" />
+      </div>
+      <div class="col-12 col-md-12 form-group mb-1">
+        <label for="apellido" class="form-label-home text-encuesta fw-bold mb-2">Fecha lanzamiento</label>
+        <input class="form-control" formControlName="fecha_lanzamiento" type="date" required />
+      </div>
+      <div class="col-12 col-md-12 form-group mb-1">
+        <label for="rut" class="form-label-home text-encuesta fw-bold mb-2">Descripcion</label>
+        <input class="form-control" formControlName="descripcion" type="text" required placeholder="Descripcion" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-end mt-md-3 mt-1">
+        <a (click)="agregar()" class="btn mt-2 text-white px-5 fw-bold" style="background: #133e95">Agregar</a>
+        <a (click)="activeModal.close({ estado: false })" class="mt-2 btn btn-secondary mx-1">Cancelar</a>
+      </div>
+    </div>
+  </form>
+</div>
